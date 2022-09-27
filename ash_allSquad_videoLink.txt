@@ -1,0 +1,5 @@
+https://drive.google.com/file/d/1hcczEfg6QTXKuNnXlsD3S_YwNQhYi7WH/view?usp=sharing
+
+We are sorry for the mistake that the comments in the video say that "while button is high" it should be written low.
+The code's condition is correct that when the button is pressed it gives low reading because we are using pull up resistor 
+It's a mistake comment and we have fixed it in the code but we were afraid to record the video and upload it again so we could miss the deadline
