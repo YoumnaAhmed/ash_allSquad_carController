@@ -27,7 +27,7 @@ void setup()
 
 void loop()
 {
- while(!digitalRead(forward)) //while button is high both motors rotate counter clockwise
+ while(!digitalRead(forward)) //while button is low both motors rotate counter clockwise
  { delay(10);   // delay for debouncing
   digitalWrite(leftIn1,HIGH);
   digitalWrite(rightIn1,HIGH);
@@ -37,7 +37,7 @@ void loop()
   analogWrite(enRight,255);
   
  }
- while(!digitalRead(backward))//while button is high both motors rotate clockwise
+ while(!digitalRead(backward))//while button is low both motors rotate clockwise
  { delay(10);
   digitalWrite(leftIn1,LOW);
   digitalWrite(rightIn1,LOW);
@@ -46,7 +46,7 @@ void loop()
   analogWrite(enLeft,255);
   analogWrite(enRight,255);
  }
-  while(!digitalRead(rightRotate))//while button is high,left motor is on and the right motor is off
+  while(!digitalRead(rightRotate))//while button is low,left motor is on and the right motor is off
  { delay(10);
   digitalWrite(leftIn1,HIGH);
   digitalWrite(rightIn1,LOW);
@@ -55,7 +55,7 @@ void loop()
   analogWrite(enLeft,255);
   analogWrite(enRight,0);
  }
-  while(!digitalRead(leftRotate))//while button is high,right motor is on and the left motor is off
+  while(!digitalRead(leftRotate))//while button is low,right motor is on and the left motor is off
  { delay(10);
   digitalWrite(leftIn1,LOW);
   digitalWrite(rightIn1,HIGH);
